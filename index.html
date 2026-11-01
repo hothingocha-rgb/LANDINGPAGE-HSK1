@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khóa HSK 1 – Học tiếng Trung Quốc Cô Hà - Quy Nhơn</title>
+<meta name="description" content="Khóa HSK 1 cho người mới bắt đầu: 26 buổi học trực tiếp, cô Hà dạy, đủ 4 kỹ năng, luyện nói tối ưu. Đăng ký qua Zalo 0914490382.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF3E8; --cream2:#F4E6D3; --ink:#2A1B18; --muted:#6B5650;
+  --coral:#E8604C; --coral-d:#C23E28; --line:#E6D3BC; --white:#FFFDF9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;font-size:17px;-webkit-text-size-adjust:100%}
+.han{font-family:"Noto Serif SC","Songti SC","SimSun","Noto Serif CJK SC",serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+h2{font-size:clamp(26px,4.6vw,38px);line-height:1.2;font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.lead{color:var(--muted);max-width:56ch;margin-bottom:36px}
+.btn{display:inline-block;background:var(--coral-d);color:#fff;text-decoration:none;font-weight:600;padding:15px 28px;border-radius:999px;font-size:17px;transition:background .15s}
+.btn:hover{background:var(--ink)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:13px 26px}
+.btn.alt:hover{background:var(--ink);color:var(--cream)}
+
+/* top bar */
+.top{border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-top:16px;padding-bottom:16px}
+.brand{font-weight:700;font-size:16px;line-height:1.3}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:13px}
+.top .btn{padding:9px 18px;font-size:15px}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.tag{display:inline-block;border:1.5px solid var(--coral-d);color:var(--coral-d);font-weight:600;font-size:14px;padding:4px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:clamp(32px,6vw,54px);line-height:1.12;font-weight:700;letter-spacing:-.02em;margin-bottom:18px}
+.hero p.sub{color:var(--muted);max-width:46ch;margin-bottom:28px;font-size:18px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:15px;color:var(--muted)}
+.facts b{color:var(--ink)}
+.glyph{background:var(--coral);color:var(--cream);border-radius:28px;padding:34px 20px 26px;text-align:center}
+.glyph .big{font-size:clamp(84px,16vw,150px);line-height:1;font-weight:900;letter-spacing:.04em}
+.glyph .py{font-size:22px;font-weight:600;margin-top:10px}
+.glyph .vi{font-size:15px;opacity:.92}
+
+/* why */
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid var(--ink);border-radius:20px;overflow:hidden;margin-bottom:44px;background:var(--white)}
+.skills div{padding:22px 10px 16px;text-align:center;border-right:2px solid var(--ink)}
+.skills div:last-child{border-right:0}
+.skills .han{font-size:clamp(40px,8vw,64px);line-height:1.1;font-weight:900}
+.skills small{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+.skills .hl{background:var(--coral);color:var(--cream)}
+.skills .hl small{color:var(--cream)}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:30px 48px}
+.why h3{font-size:19px;margin-bottom:4px}
+.why p{color:var(--muted);font-size:16px}
+
+
+/* hsk goals */
+.goals{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+.goal{padding:28px 24px 28px 0;border-right:1.5px solid var(--line)}
+.goal+.goal{padding-left:24px}
+.goal:last-child{border-right:0;padding-right:0}
+.goal .han{font-size:44px;font-weight:900;line-height:1.1;color:var(--coral-d)}
+.goal .py{font-size:14px;color:var(--muted);margin-bottom:10px}
+.goal h3{font-size:19px;margin-bottom:6px}
+.goal p{color:var(--muted);font-size:16px}
+.goals-note{margin-top:22px;max-width:62ch}
+
+/* outline */
+.outline-bg{background:var(--cream2)}
+.grid26{display:grid;grid-template-columns:repeat(13,1fr);gap:8px;margin-bottom:22px}
+.grid26 span{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:10px;font-weight:600;font-size:14px;background:var(--white);border:1.5px solid var(--line)}
+.grid26 span.p{background:var(--coral);border-color:var(--coral);color:#fff}
+.legend{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:15px;margin-bottom:34px}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:8px;background:var(--white);border:1.5px solid var(--line)}
+.legend i.p{background:var(--coral);border-color:var(--coral)}
+.phases{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.phase{background:var(--white);border-radius:18px;padding:24px;border-left:6px solid var(--line)}
+.phase.p{border-left-color:var(--coral)}
+.phase h3{font-size:19px;margin-bottom:6px}
+.phase p{color:var(--muted);font-size:16px}
+.sched{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:16px}
+.sched b{font-weight:700}
+
+/* fee */
+.fee{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.plan{border:2px solid var(--line);background:var(--white);border-radius:22px;padding:30px 28px}
+.plan.best{border-color:var(--coral-d);border-width:3px}
+.plan .name{font-weight:700;font-size:18px;margin-bottom:10px}
+.price{font-size:clamp(34px,6vw,46px);font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.price s{font-size:20px;color:var(--muted);font-weight:500;margin-right:8px}
+.plan ul{list-style:none;margin:18px 0 0}
+.plan li{padding:7px 0 7px 26px;position:relative;font-size:16px}
+.plan li:before{content:"";position:absolute;left:2px;top:15px;width:12px;height:7px;border-left:2.5px solid var(--coral-d);border-bottom:2.5px solid var(--coral-d);transform:rotate(-45deg)}
+.note{margin-top:18px;color:var(--muted);font-size:15px}
+
+/* faq */
+details{border-bottom:1.5px solid var(--line);padding:4px 0}
+summary{cursor:pointer;font-weight:600;padding:16px 36px 16px 0;list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:4px;top:10px;font-size:28px;font-weight:400;color:var(--coral-d)}
+details[open] summary:after{content:"–"}
+details p{color:var(--muted);padding:0 0 18px;max-width:62ch}
+
+/* final cta */
+.final{background:var(--ink);color:var(--cream);text-align:center;padding:76px 0}
+.final .han{font-size:56px;font-weight:900;color:var(--coral);line-height:1;margin-bottom:14px}
+.final h2{color:var(--cream)}
+.final p{color:#D9C7B6;max-width:46ch;margin:0 auto 28px}
+.final .btn{background:var(--coral);color:var(--ink)}
+.final .btn:hover{background:var(--cream)}
+footer{background:var(--ink);color:#BBA999;text-align:center;font-size:14px;padding:0 22px 30px}
+
+.float{display:none}
+
+@media(max-width:760px){
+  body{font-size:16px}
+  section{padding:52px 0}
+  .hero{padding:36px 0 52px}
+  .hero .wrap{grid-template-columns:1fr;gap:30px}
+  .why,.phases,.fee{grid-template-columns:1fr}
+  .goals{grid-template-columns:1fr}
+  .goal,.goal+.goal{padding:22px 0;border-right:0;border-bottom:1.5px solid var(--line)}
+  .goal:last-child{border-bottom:0}
+  .grid26{grid-template-columns:repeat(7,1fr)}
+  .skills div{padding:16px 4px 12px}
+  .skills small{font-size:12px}
+  .top .btn{display:none}
+  .float{display:block;position:fixed;left:16px;right:16px;bottom:14px;z-index:10;text-align:center;box-shadow:0 6px 20px rgba(42,27,24,.25)}
+  footer{padding-bottom:84px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Học tiếng Trung Quốc Cô Hà - Quy Nhơn<small>Khóa HSK 1 · học trực tiếp</small></div>
+    <a class="btn" href="https://zalo.me/0914490382">Nhắn Zalo đăng ký</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="tag">Dành cho người mới bắt đầu</span>
+      <h1>Học tiếng Trung bài bản từ đầu, nói được ngay trong lớp</h1>
+      <p class="sub">Khóa HSK 1 gồm 26 buổi học trực tiếp với cô Hà. Tốc độ vừa phải, đủ nghe – nói – đọc – viết, dành nhiều thời gian nhất cho luyện nói.</p>
+      <div class="cta">
+        <a class="btn" href="https://zalo.me/0914490382">Đăng ký qua Zalo</a>
+        <a class="btn alt" href="#outline">Xem lộ trình 26 buổi</a>
+      </div>
+      <div class="facts">
+        <span><b>26</b> buổi</span>
+        <span>Tối đa <b>15</b> học viên</span>
+      </div>
+    </div>
+    <div class="glyph" aria-hidden="true">
+      <div class="big han">你好</div>
+      <div class="py">nǐ hǎo</div>
+      <div class="vi">Xin chào – câu đầu tiên bạn sẽ nói</div>
+    </div>
+  </div>
+</section>
+
+<section id="why" style="background:var(--cream)">
+  <div class="wrap">
+    <h2>Vì sao chọn khóa này</h2>
+    <p class="lead">Một lớp nhỏ, một giáo viên theo sát, một lộ trình rõ ràng từ phát âm đến giao tiếp cơ bản.</p>
+    <div class="skills" role="img" aria-label="Bốn kỹ năng: nghe, nói, đọc, viết. Kỹ năng nói được luyện tối ưu.">
+      <div><span class="han">听</span><small>Nghe</small></div>
+      <div class="hl"><span class="han">说</span><small>Nói – trọng tâm</small></div>
+      <div><span class="han">读</span><small>Đọc</small></div>
+      <div><span class="han">写</span><small>Viết</small></div>
+    </div>
+    <div class="why">
+      <div><h3>Cô Hà trực tiếp dạy</h3><p>Cô Hà có 20 năm kinh nghiệm dạy tiếng Trung và đứng lớp trực tiếp từ buổi đầu đến buổi cuối.</p></div>
+      <div><h3>Học đủ 4 kỹ năng</h3><p>Nghe, nói, đọc, viết được luyện song song, không học lệch một mảng.</p></div>
+      <div><h3>Luyện nói tối ưu</h3><p>Mỗi buổi đều có thời gian để bạn mở miệng nói, được sửa phát âm và thanh điệu ngay tại lớp.</p></div>
+      <div><h3>Tốc độ vừa phải, bài bản</h3><p>Bắt đầu từ ngữ âm, rồi đi theo từng bài của Giáo trình chuẩn HSK 1 (khung mới 3.0). Không vội, không bỏ sót nền tảng.</p></div>
+      <div><h3>Lớp nhỏ, tối đa 15 người</h3><p>Đủ ít để cô theo dõi từng bạn, đủ đông để có bạn học luyện hội thoại cùng.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="hsk" style="background:var(--white)">
+  <div class="wrap">
+    <h2>Học và thi chứng chỉ HSK để làm gì</h2>
+    <p class="lead">HSK là chứng chỉ năng lực tiếng Trung dành cho người nước ngoài. HSK 1 là bậc đầu tiên, giúp bạn đặt nền móng đúng để thi lên các cấp cao hơn.</p>
+    <div class="goals">
+      <div class="goal">
+        <div class="han" aria-hidden="true">留学</div>
+        <div class="py">liúxué</div>
+        <h3>Du học</h3>
+        <p>Nhiều trường đại học ở Trung Quốc yêu cầu chứng chỉ HSK trong hồ sơ nhập học và xét học bổng (mức yêu cầu tùy từng trường).</p>
+      </div>
+      <div class="goal">
+        <div class="han" aria-hidden="true">工作</div>
+        <div class="py">gōngzuò</div>
+        <h3>Ứng tuyển công việc</h3>
+        <p>Chứng chỉ HSK là minh chứng rõ ràng về trình độ khi bạn ứng tuyển vào các vị trí cần dùng tiếng Trung.</p>
+      </div>
+      <div class="goal">
+        <div class="han" aria-hidden="true">毕业</div>
+        <div class="py">bìyè</div>
+        <h3>Chuẩn đầu ra cho sinh viên</h3>
+        <p>HSK được dùng làm chuẩn đầu ra ngoại ngữ cho sinh viên tất cả các ngành (bậc 3).</p>
+      </div>
+    </div>
+    <p class="note goals-note">Học bài bản ngay từ HSK 1 giúp bạn đi đúng lộ trình thi lấy chứng chỉ sau này.</p>
+  </div>
+</section>
+
+<section id="outline" class="outline-bg">
+  <div class="wrap">
+    <h2>Lộ trình 26 buổi</h2>
+    <p class="lead">Mỗi ô là một buổi học. Khóa mở đầu bằng 3 buổi ngữ âm, sau đó là 23 buổi học các bài trong giáo trình.</p>
+    <div class="grid26" aria-hidden="true">
+      <span class="p">1</span><span class="p">2</span><span class="p">3</span>
+      <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+      <span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span>
+      <span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span>
+      <span>25</span><span>26</span>
+    </div>
+    <div class="legend">
+      <span><i class="p"></i>Ngữ âm (3 buổi)</span>
+      <span><i></i>Bài trong giáo trình (23 buổi)</span>
+    </div>
+    <div class="phases">
+      <div class="phase p">
+        <h3>3 buổi ngữ âm</h3>
+        <p>Làm quen thanh mẫu, vận mẫu, thanh điệu và pinyin để đọc đúng ngay từ đầu.</p>
+      </div>
+      <div class="phase">
+        <h3>23 buổi học bài trong giáo trình</h3>
+        <p>Học từ mới, bài khóa và ngữ pháp theo Giáo trình chuẩn HSK 1 (3.0), kết hợp luyện nghe, nói, đọc, viết trong từng buổi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fee">
+  <div class="wrap">
+    <h2>Học phí</h2>
+    <div class="plan best" style="max-width:520px">
+      <div class="name">Liên hệ với giáo viên</div>
+      <p style="color:var(--muted);margin-bottom:22px">Nhắn Zalo cho cô Hà để được tư vấn học phí và giữ chỗ.</p>
+      <a class="btn" href="https://zalo.me/0914490382">Nhắn Zalo 0914490382</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--cream2)">
+  <div class="wrap">
+    <h2>Câu hỏi thường gặp</h2>
+    <p class="lead">Chưa thấy câu trả lời bạn cần? Nhắn Zalo, cô Hà sẽ trả lời trực tiếp.</p>
+    <details>
+      <summary>Mình chưa biết gì về tiếng Trung, có học được không?</summary>
+      <p>Được. Khóa dành cho người mới bắt đầu và mở đầu bằng 3 buổi ngữ âm, nên bạn không cần biết trước chữ Hán hay pinyin.</p>
+    </details>
+    <details>
+      <summary>Khóa học dùng giáo trình nào?</summary>
+      <p>Giáo trình chuẩn HSK 1 theo khung mới (3.0).</p>
+    </details>
+    <details>
+      <summary>Khóa này có dạy cả nghe, đọc, viết hay chỉ luyện nói?</summary>
+      <p>Cả bốn kỹ năng nghe, nói, đọc, viết. Kỹ năng nói được ưu tiên luyện nhiều nhất để bạn dám nói và nói đúng thanh điệu.</p>
+    </details>
+    <details>
+      <summary>Lớp có đông không?</summary>
+      <p>Không. Mỗi lớp tối đa 15 học viên để cô Hà theo sát và sửa lỗi cho từng bạn.</p>
+    </details>
+    <details>
+      <summary>Đăng ký và giữ chỗ như thế nào?</summary>
+      <p>Nhắn Zalo 0914490382 để được tư vấn lịch học, học phí và giữ chỗ.</p>
+    </details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="han" aria-hidden="true">开始吧</div>
+    <h2>Bắt đầu tiếng Trung cùng cô Hà</h2>
+    <p>Lớp chỉ nhận tối đa 15 học viên. Nhắn Zalo để nhận lịch học, học phí và giữ chỗ.</p>
+    <a class="btn" href="https://zalo.me/0914490382">Đăng ký qua Zalo 0914490382</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Học tiếng Trung Quốc Cô Hà - Quy Nhơn · Zalo 0914490382</p>
+</footer>
+
+<a class="btn float" href="https://zalo.me/0914490382">Đăng ký qua Zalo</a>
+</body>
+</html>
